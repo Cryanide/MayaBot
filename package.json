@@ -1,0 +1,23 @@
+{
+  "name": "mayabot",
+  "version": "1.0.0",
+  "description": "A simple modular bot",
+  "main": "Maya.js",
+  "dependencies": {
+    "discord.js": "^11.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "ping"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cryanide/MayaBot.git"
+  },
+  "author": "Cryanide",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cryanide/MayaBot/issues"
+  },
+  "homepage": "https://github.com/Cryanide/MayaBot#readme"
+}

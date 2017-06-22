@@ -1,0 +1,11 @@
+{
+  "token":"MzI2NzM1MTM4NzY5ODYyNjU2.DCrZCg.vezkgRZrB3nlEam_L3lC0qd-UTs",
+  "prefix": "run/",
+  "commandswitch": {
+    "ping":"on",
+    "ban":"on",
+    "kick":"on",
+    "unban":"on",
+    "warn":"on"
+  }
+}
