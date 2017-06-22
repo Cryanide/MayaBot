@@ -1,6 +1,12 @@
 exports.run = (client, message, args) => {
-  message.channel.send("adios")
-  .then(dc => {
-    process.exit()
-  })
+  let owner = "171015121135468545"
+  if (message.author.id === owner) {
+    message.channel.send("adios")
+    .then(dc => {
+      process.exit()
+    })
+  }
+  else {
+    message.channel.send("Sorry, you do not have permission")
+  }
 }
