@@ -8,14 +8,14 @@ exports.run = (client, message, args) => {
       client.unbanReason = reason;
       client.unbanAuth = message.author;
       let user = args[0];
-      let modlog = client.channels.find('name', 'mod-log');
+      let modlog = message.guild.channels.find('name', 'mod-log');
       if (!modlog) {
         message.reply('I cannot find a mod-log channel');
         if(message.guild.members.get('326735138769862656').hasPermission('MANAGE_CHANNELS')) {
           message.channel.send("Running `createChannel.exe`...")
           message.guild.createChannel('mod-log', 'text')
           .then(chan => {
-            message.channel.send(`${chan} has been created, please run the command again`)
+            message.channel.send(`${chan} has been created for future use`)
           })
         }
         else message.channel.send("`createChannel.exe has stopped working`: Unable to create a new channel, create one please")
