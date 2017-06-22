@@ -3,7 +3,7 @@ exports.run = (client, message, args) => {
   let onoff = config.commandswitch.ping
   let permissionCheck = message.author.id
   if (onoff === "on") {
-    if(message.guild.member(permissionCheck).hasPermission("BAN_MEMBERS")) {
+    if(message.guild.member(permissionCheck).hasPermission("BAN_MEMBERS") && message.guild.member(client.user.id).hasPermission("BAN_MEMBERS")) {
       let reason = args.slice(1).join(' ');
       client.unbanReason = reason;
       client.unbanAuth = message.author;

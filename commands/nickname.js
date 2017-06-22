@@ -4,7 +4,7 @@ exports.run = function(client, message, args) {
   let onoff = config.commandswitch.ping
   let permissionCheck = message.author.id
   if (onoff === "on") {
-    if (message.guild.member(permissionCheck).hasPermission("BAN_MEMBERS")) {
+    if (message.guild.member(permissionCheck).hasPermission("MANAGE_NICKNAMES") && message.guild.member(client.user.id).hasPermission("MANAGE_NICKNAMES")) {
       let nickchange = args.slice(1).join(' ');
       let user = message.mentions.users.first();
       let modlog = message.guild.channels.find('name', 'mod-log');

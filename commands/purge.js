@@ -1,6 +1,6 @@
 exports.run = function(client, message, args) {
   let permissionCheck = message.author.id
-  if (message.guild.member(permissionCheck).hasPermission("MANAGE_MESSAGES")) {
+  if (message.guild.member(permissionCheck).hasPermission("MANAGE_MESSAGES") && message.guild.member(client.user.id).hasPermission("MANAGE_MESSAGES")) {
     let messagecount = parseInt(args.join(' '));
     message.channel.fetchMessages({
       limit: messagecount

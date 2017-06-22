@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
   let onoff = config.commandswitch.ping
   let permissionCheck = message.author.id
   if (onoff === "on") {
-    if (message.guild.member(permissionCheck).hasPermission("MUTE_MEMBERS")) {
+    if (message.guild.member(permissionCheck).hasPermission("MUTE_MEMBERS") && message.guild.member(client.user.id).hasPermission("MUTE_MEMBERS")) {
       let reason = args.slice(1).join(' ');
       let user = message.mentions.users.first();
       let modlog = message.guild.channels.find('name', 'mod-log');
@@ -21,13 +21,13 @@ exports.run = (client, message, args) => {
         else message.channel.send("`createChannel.exe has stopped working`: Unable to create a new channel, create one please")
       }
       if (!muteRole) {
-            e.guild.createRole({
+            message.guild.createRole({
             name: 'muted',
             color: 'black',
             permissions: 1049600
           })
           .then(role => {
-            message.channel.send("Mute.exe has stopped working, ran `createRole` Protocol for `muted`\nSuccess, please run command again")
+            message.channel.send("Mute.exe has stopped working, ran `createRole` Protocol for `muted`\nSuccess")
           })
         }
       if (reason.length < 1) return message.reply('You must supply a reason for the mute.').catch(console.error);
