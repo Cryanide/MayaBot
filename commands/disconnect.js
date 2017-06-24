@@ -3,6 +3,7 @@ exports.run = (client, message, args) => {
   if (message.author.id === owner) {
     message.channel.send("adios")
     .then(dc => {
+      client.destroy()
       process.exit()
     })
   }
