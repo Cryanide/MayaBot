@@ -8,7 +8,7 @@ exports.run = function(client, message, args) {
       message.channel.bulkDelete(messages)
       message.channel.send(`Deleted ${messagecount} messages.`)
       .then(delmsg => {
-        delmsg.delete(10000)
+        delmsg.delete(15000)
       })
     });
   }
