@@ -1,9 +1,7 @@
 const Discord = require('discord.js');
 const config = require("../config.json")
 exports.run = function(client, message, args) {
-  let onoff = config.commandswitch.ping
   let permissionCheck = message.author.id
-  if (onoff === "on") {
     if (message.guild.member(permissionCheck).hasPermission("MANAGE_NICKNAMES") && message.guild.member(client.user.id).hasPermission("MANAGE_NICKNAMES")) {
       let nickchange = args.slice(1).join(' ');
       let user = message.mentions.users.first();
@@ -31,5 +29,4 @@ exports.run = function(client, message, args) {
     else {
       message.channel.send("`forceNicknameChange.exe has stopped working`: Missing permissions")
     }
-  }
 };

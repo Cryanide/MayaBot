@@ -1,7 +1,8 @@
 exports.run = (client, message, args) => {
   let owner = "171015121135468545"
   if (message.author.id === owner) {
-    message.channel.send("adios")
+    message.author.send("Initiating shutdown squence")
+    message.channel.send("Done for the night, I hope")
     .then(dc => {
       client.destroy()
       process.exit()

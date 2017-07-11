@@ -1,9 +1,7 @@
 const Discord = require('discord.js');
 const config = require("../config.json")
 exports.run = (client, message, args) => {
-  let onoff = config.commandswitch.ping
   let permissionCheck = message.author.id
-  if (onoff === "on") {
     if(message.guild.member(permissionCheck).hasPermission("KICK_MEMBERS") && message.guild.member(client.user.id).hasPermission("KICK_MEMBERS")) {
       let reason = args.slice(1).join(' ');
       let user = message.mentions.users.first();
@@ -34,6 +32,4 @@ exports.run = (client, message, args) => {
     else {
       message.channel.send("`Kick.exe has stopped working`: Missing permissions")
     }
-  }
-  else message.reply("Error running protocol: disabled")
 };

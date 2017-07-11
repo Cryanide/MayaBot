@@ -1,0 +1,2 @@
+node Maya.js
+pause
