@@ -1,11 +1,12 @@
 {
-  "token":"MzI2NzM1MTM4NzY5ODYyNjU2.DCzTNA.e5hozcCLrXaPw9XQGNiEdeEiyIw",
+  "token": "MzI2NzM1MTM4NzY5ODYyNjU2.DEbRSQ.9RDDCUV-VivUjsflU2EOEYah40k",
   "prefix": "run/",
-  "commandswitch": {
-    "ping":"on",
-    "ban":"on",
-    "kick":"on",
-    "unban":"on",
-    "warn":"on"
-  }
+  "lastmsg": "client.user.displayName",
+  "msgtodelete": "334470846636752897",
+  "msgtodeletecontent": "run/eval client.user.displayName",
+  "hackgif": [
+    "http://i.imgur.com/9QmTqs6.gif",
+    "http://i.imgur.com/B9T0ikY.gif",
+    "http://i.imgur.com/C8BikpS.gif"
+  ]
 }

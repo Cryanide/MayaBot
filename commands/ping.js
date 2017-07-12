@@ -4,4 +4,4 @@ exports.run = (client, message, args) => {
     .then(msg => {
       msg.edit(`Pong.exe took ${msg.createdTimestamp - message.createdTimestamp}ms to respond`);
     });
-  });
+  }
