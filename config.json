@@ -1,9 +1,9 @@
 {
   "token": "MzI2NzM1MTM4NzY5ODYyNjU2.DEbRSQ.9RDDCUV-VivUjsflU2EOEYah40k",
-  "prefix": "run/",
-  "lastmsg": "client.user.displayName",
-  "msgtodelete": "334470846636752897",
-  "msgtodeletecontent": "run/eval client.user.displayName",
+  "prefix": ";",
+  "lastmsg": "message.guild.members.get('171015121135468545').user.tag",
+  "msgtodelete": "343077392983654420",
+  "msgtodeletecontent": "run/eval message.guild.members.get('171015121135468545').user.tag",
   "hackgif": [
     "http://i.imgur.com/9QmTqs6.gif",
     "http://i.imgur.com/B9T0ikY.gif",

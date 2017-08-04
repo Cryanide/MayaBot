@@ -20,7 +20,7 @@ exports.run = (client, message, args) => {
       if (reason.length < 1) return message.reply('You must supply a reason for the warning.');
       if (message.mentions.users.size < 1) return message.reply('You must mention someone to warn them.').catch(console.error);
       const embed = new Discord.RichEmbed()
-      .setColor(0x00AE86)
+      .setColor(0xf4f442)
       .setTimestamp()
       .setDescription(`**Protocol:** Warning.exe\n**Target:** ${user.tag}\n**Moderator:** ${message.author.tag}\n**Reason:** ${reason}`);
       return client.channels.get(modlog.id).send({embed});

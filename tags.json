@@ -1,0 +1,17 @@
+{
+  "alltags": {
+    "335487868447490050": {
+      "new tag": {},
+      "new test tag": {}
+    },
+    "290043665676763137": {
+      "first tag": {
+        "tag_maker": "Cryanide#4963",
+        "tag_maker_id": "171015121135468545",
+        "tag_desc": "Just to tell people who got the first tag",
+        "actual_tag": "<@!171015121135468545> got the first tag",
+        "guild_name": "Solefore"
+      }
+    }
+  }
+}
