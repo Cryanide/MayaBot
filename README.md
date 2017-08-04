@@ -3,6 +3,7 @@ Just a simple modular discord bot, written in discord.js
 prefix is ;
 
 //I'm putting all the commands here because writting in code takes to long
+//I suggest clicking "Raw" or going to this link https://raw.githubusercontent.com/Cryanide/MayaBot/master/README.md for a better format
 
 Moderation commands:
   Kick
